@@ -1,0 +1,550 @@
+// Decision Tree
+digraph {
+	relationship [label=relationship]
+	Husband [label=Husband]
+	relationship -> Husband
+	education [label=education]
+	Husband -> education
+	"Not-in-family" [label="Not-in-family"]
+	relationship -> "Not-in-family"
+	"<=50K2" [label="<=50K"]
+	"Not-in-family" -> "<=50K2"
+	Unmarried [label=Unmarried]
+	relationship -> Unmarried
+	"<=50K3" [label="<=50K"]
+	Unmarried -> "<=50K3"
+	"Own-child" [label="Own-child"]
+	relationship -> "Own-child"
+	"<=50K4" [label="<=50K"]
+	"Own-child" -> "<=50K4"
+	Wife [label=Wife]
+	relationship -> Wife
+	">50K5" [label=">50K"]
+	Wife -> ">50K5"
+	"Other-relative" [label="Other-relative"]
+	relationship -> "Other-relative"
+	"<=50K6" [label="<=50K"]
+	"Other-relative" -> "<=50K6"
+	education [label=education]
+	Bachelors [label=Bachelors]
+	education -> Bachelors
+	hours_per_week [label=hours_per_week]
+	Bachelors -> hours_per_week
+	"11th" [label="11th"]
+	education -> "11th"
+	"<=50K8" [label="<=50K"]
+	"11th" -> "<=50K8"
+	"HS-grad" [label="HS-grad"]
+	education -> "HS-grad"
+	">50K9" [label=">50K"]
+	"HS-grad" -> ">50K9"
+	"Some-college" [label="Some-college"]
+	education -> "Some-college"
+	">50K10" [label=">50K"]
+	"Some-college" -> ">50K10"
+	"Assoc-voc" [label="Assoc-voc"]
+	education -> "Assoc-voc"
+	">50K11" [label=">50K"]
+	"Assoc-voc" -> ">50K11"
+	Doctorate [label=Doctorate]
+	education -> Doctorate
+	">50K12" [label=">50K"]
+	Doctorate -> ">50K12"
+	"Assoc-acdm" [label="Assoc-acdm"]
+	education -> "Assoc-acdm"
+	">50K13" [label=">50K"]
+	"Assoc-acdm" -> ">50K13"
+	"7th-8th" [label="7th-8th"]
+	education -> "7th-8th"
+	"<=50K14" [label="<=50K"]
+	"7th-8th" -> "<=50K14"
+	Masters [label=Masters]
+	education -> Masters
+	">50K15" [label=">50K"]
+	Masters -> ">50K15"
+	"Prof-school" [label="Prof-school"]
+	education -> "Prof-school"
+	">50K16" [label=">50K"]
+	"Prof-school" -> ">50K16"
+	"9th" [label="9th"]
+	education -> "9th"
+	"<=50K17" [label="<=50K"]
+	"9th" -> "<=50K17"
+	"12th" [label="12th"]
+	education -> "12th"
+	"<=50K18" [label="<=50K"]
+	"12th" -> "<=50K18"
+	"10th" [label="10th"]
+	education -> "10th"
+	"<=50K19" [label="<=50K"]
+	"10th" -> "<=50K19"
+	"5th-6th" [label="5th-6th"]
+	education -> "5th-6th"
+	"<=50K20" [label="<=50K"]
+	"5th-6th" -> "<=50K20"
+	Preschool [label=Preschool]
+	education -> Preschool
+	"<=50K21" [label="<=50K"]
+	Preschool -> "<=50K21"
+	"1st-4th" [label="1st-4th"]
+	education -> "1st-4th"
+	"<=50K22" [label="<=50K"]
+	"1st-4th" -> "<=50K22"
+	hours_per_week [label=hours_per_week]
+	13 [label=13]
+	hours_per_week -> 13
+	age [label=age]
+	13 -> age
+	40 [label=40]
+	hours_per_week -> 40
+	native_country [label=native_country]
+	40 -> native_country
+	50 [label=50]
+	hours_per_week -> 50
+	">50K25" [label=">50K"]
+	50 -> ">50K25"
+	70 [label=70]
+	hours_per_week -> 70
+	">50K26" [label=">50K"]
+	70 -> ">50K26"
+	60 [label=60]
+	hours_per_week -> 60
+	">50K27" [label=">50K"]
+	60 -> ">50K27"
+	65 [label=65]
+	hours_per_week -> 65
+	">50K28" [label=">50K"]
+	65 -> ">50K28"
+	36 [label=36]
+	hours_per_week -> 36
+	">50K29" [label=">50K"]
+	36 -> ">50K29"
+	55 [label=55]
+	hours_per_week -> 55
+	">50K30" [label=">50K"]
+	55 -> ">50K30"
+	45 [label=45]
+	hours_per_week -> 45
+	">50K31" [label=">50K"]
+	45 -> ">50K31"
+	80 [label=80]
+	hours_per_week -> 80
+	">50K32" [label=">50K"]
+	80 -> ">50K32"
+	35 [label=35]
+	hours_per_week -> 35
+	">50K33" [label=">50K"]
+	35 -> ">50K33"
+	26 [label=26]
+	hours_per_week -> 26
+	">50K34" [label=">50K"]
+	26 -> ">50K34"
+	47 [label=47]
+	hours_per_week -> 47
+	">50K35" [label=">50K"]
+	47 -> ">50K35"
+	20 [label=20]
+	hours_per_week -> 20
+	"<=50K36" [label="<=50K"]
+	20 -> "<=50K36"
+	42 [label=42]
+	hours_per_week -> 42
+	">50K37" [label=">50K"]
+	42 -> ">50K37"
+	7 [label=7]
+	hours_per_week -> 7
+	">50K38" [label=">50K"]
+	7 -> ">50K38"
+	43 [label=43]
+	hours_per_week -> 43
+	">50K39" [label=">50K"]
+	43 -> ">50K39"
+	52 [label=52]
+	hours_per_week -> 52
+	">50K40" [label=">50K"]
+	52 -> ">50K40"
+	90 [label=90]
+	hours_per_week -> 90
+	"<=50K41" [label="<=50K"]
+	90 -> "<=50K41"
+	56 [label=56]
+	hours_per_week -> 56
+	">50K42" [label=">50K"]
+	56 -> ">50K42"
+	28 [label=28]
+	hours_per_week -> 28
+	"<=50K43" [label="<=50K"]
+	28 -> "<=50K43"
+	15 [label=15]
+	hours_per_week -> 15
+	"<=50K44" [label="<=50K"]
+	15 -> "<=50K44"
+	5 [label=5]
+	hours_per_week -> 5
+	"<=50K45" [label="<=50K"]
+	5 -> "<=50K45"
+	48 [label=48]
+	hours_per_week -> 48
+	">50K46" [label=">50K"]
+	48 -> ">50K46"
+	18 [label=18]
+	hours_per_week -> 18
+	">50K47" [label=">50K"]
+	18 -> ">50K47"
+	75 [label=75]
+	hours_per_week -> 75
+	">50K48" [label=">50K"]
+	75 -> ">50K48"
+	30 [label=30]
+	hours_per_week -> 30
+	"<=50K49" [label="<=50K"]
+	30 -> "<=50K49"
+	44 [label=44]
+	hours_per_week -> 44
+	">50K50" [label=">50K"]
+	44 -> ">50K50"
+	38 [label=38]
+	hours_per_week -> 38
+	">50K51" [label=">50K"]
+	38 -> ">50K51"
+	8 [label=8]
+	hours_per_week -> 8
+	">50K52" [label=">50K"]
+	8 -> ">50K52"
+	25 [label=25]
+	hours_per_week -> 25
+	">50K53" [label=">50K"]
+	25 -> ">50K53"
+	37 [label=37]
+	hours_per_week -> 37
+	">50K54" [label=">50K"]
+	37 -> ">50K54"
+	32 [label=32]
+	hours_per_week -> 32
+	">50K55" [label=">50K"]
+	32 -> ">50K55"
+	97 [label=97]
+	hours_per_week -> 97
+	">50K56" [label=">50K"]
+	97 -> ">50K56"
+	58 [label=58]
+	hours_per_week -> 58
+	">50K57" [label=">50K"]
+	58 -> ">50K57"
+	6 [label=6]
+	hours_per_week -> 6
+	"<=50K58" [label="<=50K"]
+	6 -> "<=50K58"
+	99 [label=99]
+	hours_per_week -> 99
+	">50K59" [label=">50K"]
+	99 -> ">50K59"
+	41 [label=41]
+	hours_per_week -> 41
+	"<=50K60" [label="<=50K"]
+	41 -> "<=50K60"
+	33 [label=33]
+	hours_per_week -> 33
+	"<=50K61" [label="<=50K"]
+	33 -> "<=50K61"
+	12 [label=12]
+	hours_per_week -> 12
+	">50K62" [label=">50K"]
+	12 -> ">50K62"
+	72 [label=72]
+	hours_per_week -> 72
+	">50K63" [label=">50K"]
+	72 -> ">50K63"
+	3 [label=3]
+	hours_per_week -> 3
+	"<=50K64" [label="<=50K"]
+	3 -> "<=50K64"
+	54 [label=54]
+	hours_per_week -> 54
+	">50K65" [label=">50K"]
+	54 -> ">50K65"
+	27 [label=27]
+	hours_per_week -> 27
+	"<=50K66" [label="<=50K"]
+	27 -> "<=50K66"
+	10 [label=10]
+	hours_per_week -> 10
+	">50K67" [label=">50K"]
+	10 -> ">50K67"
+	24 [label=24]
+	hours_per_week -> 24
+	">50K68" [label=">50K"]
+	24 -> ">50K68"
+	46 [label=46]
+	hours_per_week -> 46
+	">50K69" [label=">50K"]
+	46 -> ">50K69"
+	53 [label=53]
+	hours_per_week -> 53
+	"<=50K70" [label="<=50K"]
+	53 -> "<=50K70"
+	16 [label=16]
+	hours_per_week -> 16
+	"<=50K71" [label="<=50K"]
+	16 -> "<=50K71"
+	63 [label=63]
+	hours_per_week -> 63
+	">50K72" [label=">50K"]
+	63 -> ">50K72"
+	66 [label=66]
+	hours_per_week -> 66
+	">50K73" [label=">50K"]
+	66 -> ">50K73"
+	51 [label=51]
+	hours_per_week -> 51
+	"<=50K74" [label="<=50K"]
+	51 -> "<=50K74"
+	84 [label=84]
+	hours_per_week -> 84
+	">50K75" [label=">50K"]
+	84 -> ">50K75"
+	57 [label=57]
+	hours_per_week -> 57
+	">50K76" [label=">50K"]
+	57 -> ">50K76"
+	68 [label=68]
+	hours_per_week -> 68
+	"<=50K77" [label="<=50K"]
+	68 -> "<=50K77"
+	39 [label=39]
+	hours_per_week -> 39
+	">50K78" [label=">50K"]
+	39 -> ">50K78"
+	age [label=age]
+	50 [label=50]
+	age -> 50
+	"<=50K79" [label="<=50K"]
+	50 -> "<=50K79"
+	57 [label=57]
+	age -> 57
+	">50K80" [label=">50K"]
+	57 -> ">50K80"
+	native_country [label=native_country]
+	"United-States" [label="United-States"]
+	native_country -> "United-States"
+	occupation [label=occupation]
+	"United-States" -> occupation
+	India [label=India]
+	native_country -> India
+	">50K82" [label=">50K"]
+	India -> ">50K82"
+	Cuba [label=Cuba]
+	native_country -> Cuba
+	"<=50K83" [label="<=50K"]
+	Cuba -> "<=50K83"
+	Canada [label=Canada]
+	native_country -> Canada
+	">50K84" [label=">50K"]
+	Canada -> ">50K84"
+	England [label=England]
+	native_country -> England
+	">50K85" [label=">50K"]
+	England -> ">50K85"
+	China [label=China]
+	native_country -> China
+	"<=50K86" [label="<=50K"]
+	China -> "<=50K86"
+	Philippines [label=Philippines]
+	native_country -> Philippines
+	">50K87" [label=">50K"]
+	Philippines -> ">50K87"
+	NAN [label=NAN]
+	native_country -> NAN
+	">50K88" [label=">50K"]
+	NAN -> ">50K88"
+	Iran [label=Iran]
+	native_country -> Iran
+	">50K89" [label=">50K"]
+	Iran -> ">50K89"
+	Peru [label=Peru]
+	native_country -> Peru
+	">50K90" [label=">50K"]
+	Peru -> ">50K90"
+	"El-Salvador" [label="El-Salvador"]
+	native_country -> "El-Salvador"
+	"<=50K91" [label="<=50K"]
+	"El-Salvador" -> "<=50K91"
+	Mexico [label=Mexico]
+	native_country -> Mexico
+	"<=50K92" [label="<=50K"]
+	Mexico -> "<=50K92"
+	"Puerto-Rico" [label="Puerto-Rico"]
+	native_country -> "Puerto-Rico"
+	">50K93" [label=">50K"]
+	"Puerto-Rico" -> ">50K93"
+	Poland [label=Poland]
+	native_country -> Poland
+	">50K94" [label=">50K"]
+	Poland -> ">50K94"
+	South [label=South]
+	native_country -> South
+	"<=50K95" [label="<=50K"]
+	South -> "<=50K95"
+	"Dominican-Republic" [label="Dominican-Republic"]
+	native_country -> "Dominican-Republic"
+	"<=50K96" [label="<=50K"]
+	"Dominican-Republic" -> "<=50K96"
+	Ecuador [label=Ecuador]
+	native_country -> Ecuador
+	"<=50K97" [label="<=50K"]
+	Ecuador -> "<=50K97"
+	Japan [label=Japan]
+	native_country -> Japan
+	">50K98" [label=">50K"]
+	Japan -> ">50K98"
+	Haiti [label=Haiti]
+	native_country -> Haiti
+	">50K99" [label=">50K"]
+	Haiti -> ">50K99"
+	Vietnam [label=Vietnam]
+	native_country -> Vietnam
+	"<=50K100" [label="<=50K"]
+	Vietnam -> "<=50K100"
+	Italy [label=Italy]
+	native_country -> Italy
+	">50K101" [label=">50K"]
+	Italy -> ">50K101"
+	Germany [label=Germany]
+	native_country -> Germany
+	">50K102" [label=">50K"]
+	Germany -> ">50K102"
+	Taiwan [label=Taiwan]
+	native_country -> Taiwan
+	"<=50K103" [label="<=50K"]
+	Taiwan -> "<=50K103"
+	Yugoslavia [label=Yugoslavia]
+	native_country -> Yugoslavia
+	"<=50K104" [label="<=50K"]
+	Yugoslavia -> "<=50K104"
+	Hong [label=Hong]
+	native_country -> Hong
+	">50K105" [label=">50K"]
+	Hong -> ">50K105"
+	Cambodia [label=Cambodia]
+	native_country -> Cambodia
+	">50K106" [label=">50K"]
+	Cambodia -> ">50K106"
+	Ireland [label=Ireland]
+	native_country -> Ireland
+	">50K107" [label=">50K"]
+	Ireland -> ">50K107"
+	Jamaica [label=Jamaica]
+	native_country -> Jamaica
+	"<=50K108" [label="<=50K"]
+	Jamaica -> "<=50K108"
+	Columbia [label=Columbia]
+	native_country -> Columbia
+	"<=50K109" [label="<=50K"]
+	Columbia -> "<=50K109"
+	occupation [label=occupation]
+	"Exec-managerial" [label="Exec-managerial"]
+	occupation -> "Exec-managerial"
+	race [label=race]
+	"Exec-managerial" -> race
+	"Tech-support" [label="Tech-support"]
+	occupation -> "Tech-support"
+	">50K111" [label=">50K"]
+	"Tech-support" -> ">50K111"
+	"Prof-specialty" [label="Prof-specialty"]
+	occupation -> "Prof-specialty"
+	">50K112" [label=">50K"]
+	"Prof-specialty" -> ">50K112"
+	Sales [label=Sales]
+	occupation -> Sales
+	">50K113" [label=">50K"]
+	Sales -> ">50K113"
+	"Protective-serv" [label="Protective-serv"]
+	occupation -> "Protective-serv"
+	">50K114" [label=">50K"]
+	"Protective-serv" -> ">50K114"
+	"Adm-clerical" [label="Adm-clerical"]
+	occupation -> "Adm-clerical"
+	">50K115" [label=">50K"]
+	"Adm-clerical" -> ">50K115"
+	NAN [label=NAN]
+	occupation -> NAN
+	">50K116" [label=">50K"]
+	NAN -> ">50K116"
+	"Craft-repair" [label="Craft-repair"]
+	occupation -> "Craft-repair"
+	">50K117" [label=">50K"]
+	"Craft-repair" -> ">50K117"
+	"Transport-moving" [label="Transport-moving"]
+	occupation -> "Transport-moving"
+	">50K118" [label=">50K"]
+	"Transport-moving" -> ">50K118"
+	"Farming-fishing" [label="Farming-fishing"]
+	occupation -> "Farming-fishing"
+	">50K119" [label=">50K"]
+	"Farming-fishing" -> ">50K119"
+	"Other-service" [label="Other-service"]
+	occupation -> "Other-service"
+	"<=50K120" [label="<=50K"]
+	"Other-service" -> "<=50K120"
+	"Handlers-cleaners" [label="Handlers-cleaners"]
+	occupation -> "Handlers-cleaners"
+	"<=50K121" [label="<=50K"]
+	"Handlers-cleaners" -> "<=50K121"
+	"Machine-op-inspct" [label="Machine-op-inspct"]
+	occupation -> "Machine-op-inspct"
+	">50K122" [label=">50K"]
+	"Machine-op-inspct" -> ">50K122"
+	race [label=race]
+	White [label=White]
+	race -> White
+	workclass [label=workclass]
+	White -> workclass
+	Black [label=Black]
+	race -> Black
+	">50K124" [label=">50K"]
+	Black -> ">50K124"
+	"Asian-Pac-Islander" [label="Asian-Pac-Islander"]
+	race -> "Asian-Pac-Islander"
+	"<=50K125" [label="<=50K"]
+	"Asian-Pac-Islander" -> "<=50K125"
+	workclass [label=workclass]
+	Private [label=Private]
+	workclass -> Private
+	education_num [label=education_num]
+	Private -> education_num
+	"State-gov" [label="State-gov"]
+	workclass -> "State-gov"
+	">50K127" [label=">50K"]
+	"State-gov" -> ">50K127"
+	"Self-emp-not-inc" [label="Self-emp-not-inc"]
+	workclass -> "Self-emp-not-inc"
+	">50K128" [label=">50K"]
+	"Self-emp-not-inc" -> ">50K128"
+	"Federal-gov" [label="Federal-gov"]
+	workclass -> "Federal-gov"
+	">50K129" [label=">50K"]
+	"Federal-gov" -> ">50K129"
+	"Self-emp-inc" [label="Self-emp-inc"]
+	workclass -> "Self-emp-inc"
+	">50K130" [label=">50K"]
+	"Self-emp-inc" -> ">50K130"
+	"Local-gov" [label="Local-gov"]
+	workclass -> "Local-gov"
+	">50K131" [label=">50K"]
+	"Local-gov" -> ">50K131"
+	education_num [label=education_num]
+	13 [label=13]
+	education_num -> 13
+	marital_status [label=marital_status]
+	13 -> marital_status
+	marital_status [label=marital_status]
+	"Married-civ-spouse" [label="Married-civ-spouse"]
+	marital_status -> "Married-civ-spouse"
+	sex [label=sex]
+	"Married-civ-spouse" -> sex
+	sex [label=sex]
+	Male [label=Male]
+	sex -> Male
+	">50K134" [label=">50K"]
+	Male -> ">50K134"
+}
